@@ -1,0 +1,88 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Abdisalam Abdirahman · IAM Support / IAM Engineer / PAM / Okta</title>
+<meta name="description" content="IAM home labs with proof: Entra ID, Active Directory, Okta SSO/MFA, CyberArk PAM.">
+<style>
+*{box-sizing:border-box}html{font-size:17px}
+body{margin:0;background:radial-gradient(900px 600px at 18% 20%,rgba(37,99,235,.30),transparent 70%),radial-gradient(800px 700px at 85% 40%,rgba(147,51,234,.25),transparent 70%),radial-gradient(700px 500px at 50% 95%,rgba(13,148,136,.2),transparent 70%),linear-gradient(160deg,#070a14,#0d1224 45%,#0a0816);min-height:100vh;color:#e5e7eb;font-family:Sora,Inter,system-ui,sans-serif;line-height:1.6}
+a{color:#fbbf24}a:focus-visible,.btn:focus-visible{outline:3px solid #fbbf24;outline-offset:3px}
+.wrap{max-width:1120px;margin:0 auto;padding:40px 20px 56px}
+header{background:rgba(10,14,28,.85);border:1px solid rgba(255,255,255,.12);border-radius:16px;padding:32px}
+.kick{color:#fbbf24;font-weight:700;letter-spacing:1.5px;font-size:.85rem;text-transform:uppercase;margin:0}
+h1{margin:.3rem 0 .2rem;font-size:clamp(1.9rem,4.5vw,2.8rem);line-height:1.15}
+.roles{font-size:clamp(1.1rem,2.5vw,1.35rem);font-weight:700;margin:.2rem 0 1rem}
+.sum p{margin:.25rem 0;max-width:62ch}
+.links{margin-top:1.2rem;display:flex;flex-wrap:wrap;gap:12px}
+.btn{display:inline-block;padding:10px 16px;border-radius:10px;border:1px solid var(--c,#fbbf24);color:#e5e7eb;text-decoration:none;font-weight:600;background:rgba(127,127,127,.08)}
+.btn.ph{border-style:dashed;color:#aab3c2}
+.loop{list-style:none;padding:0;margin:28px 0 0;display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+.loop li{border-top:4px solid var(--c);background:rgba(10,14,28,.85);border-radius:10px;padding:10px 12px;border-left:1px solid rgba(255,255,255,.12);border-right:1px solid rgba(255,255,255,.12);border-bottom:1px solid rgba(255,255,255,.12)}
+.loop b{display:block}.loop span{color:#aab3c2;font-size:.9rem}
+h2{margin:40px 0 6px;font-size:1.5rem}.legend{display:flex;flex-wrap:wrap;gap:16px;color:#aab3c2;margin-bottom:16px;font-size:.95rem}
+.lg i{display:inline-block;width:12px;height:12px;border-radius:50%;background:var(--c);margin-right:6px;vertical-align:-1px}
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+.card{background:rgba(10,14,28,.85);border:1px solid rgba(255,255,255,.12);border-top:5px solid var(--c);border-radius:14px;padding:20px;display:flex;flex-direction:column}
+.cat{display:flex;justify-content:space-between;align-items:center}
+.pill{color:#0b0f1e;background:var(--c);font-weight:700;font-size:.8rem;padding:2px 10px;border-radius:999px;letter-spacing:.5px;}
+.mo{color:#aab3c2;font-size:.9rem}
+h3{margin:.6rem 0 .6rem;font-size:1.25rem}
+.card img{width:100%;height:auto;border-radius:8px;border:1px solid rgba(255,255,255,.12);}
+h4{margin:.9rem 0 .2rem;font-size:.85rem;letter-spacing:1px;text-transform:uppercase;color:var(--c);}
+.card p{margin:0}.card ul{margin:.2rem 0 0;padding-left:1.2rem}
+.stack{list-style:none;padding:0!important;display:flex;flex-wrap:wrap;gap:6px}
+.stack li{border:1px solid rgba(255,255,255,.12);border-radius:6px;padding:1px 8px;font-size:.9rem}
+.card .btn{margin-top:auto;align-self:flex-start}.proof{margin-bottom:16px!important}
+footer{margin-top:40px;color:#aab3c2;font-size:.95rem;text-align:center}
+@media(max-width:760px){.grid{grid-template-columns:1fr}.loop{grid-template-columns:repeat(2,1fr)}header{padding:22px}}
+</style></head><body><main class="wrap">
+<header>
+<p class="kick">🛣️ Road to June 2027 · Portfolio</p>
+<h1>Abdisalam Abdirahman</h1>
+<p class="roles">IAM Support · IAM Engineer · PAM · Okta IAM</p>
+<div class="sum">
+<p>I build identity labs and show the screenshots. Every claim below links to the proof.</p>
+<p>Each lab runs like a ticket: grant the access, verify it with MFA or an approver, use it, then revoke it.</p>
+<p>5 years at Securitas and now overnight security at Oatridge Security Group handling badges and access control. Same job: who gets in, and who gets taken off.</p>
+</div>
+<div class="links">
+<a class="btn" href="https://github.com/salamraghe">GitHub: salamraghe</a>
+<a class="btn" href="https://docs.google.com/document/d/1eS4VUPt0tz4uXDLSNUKU7jyGmtwie00KKbrtrInZMXY/edit" target="_blank" rel="noopener">Resume</a>
+</div>
+<ol class="loop" aria-label="Access lifecycle each lab follows"><li style="--c:#3B82F6"><b>Grant</b><span>right group, right app</span></li><li style="--c:#22C55E"><b>Verify</b><span>MFA / approval</span></li><li style="--c:#22D3EE"><b>Use</b><span>SSO or recorded session</span></li><li style="--c:#F97316"><b>Revoke</b><span>remove, disable, rotate</span></li></ol>
+</header>
+<h2>Labs</h2>
+<div class="legend"><span class="lg" style="--c:#22D3EE"><i></i>Cloud identity</span><span class="lg" style="--c:#3B82F6"><i></i>On-prem directory</span><span class="lg" style="--c:#22C55E"><i></i>SSO / MFA</span><span class="lg" style="--c:#F97316"><i></i>Privileged access</span></div>
+<section class="grid"><article class="card" style="--c:#22D3EE">
+<div class="cat"><span class="pill">Cloud identity</span><span class="mo">Sep 2026</span></div>
+<h3>Entra IAM Lab</h3>
+<img src="assets/entra-iam-lab.png" alt="What If shows the MFA policy applies to Test User" loading="lazy">
+<h4>Problem</h4><p>A user needs MFA enforced, app access through SSO, and a clean offboard when they leave, all in a real Microsoft Entra tenant.</p>
+<h4>Stack</h4><ul class="stack"><li>Microsoft Entra ID (P2 trial)</li><li>Conditional Access</li><li>SAML (Entra SAML Toolkit)</li><li>OIDC (jwt.ms)</li></ul>
+<h4>What's proven</h4><ul class="proof"><li>Users, a security group (MFA-Test-Group) and P2 licensing set up</li><li>Conditional Access policy requiring MFA for the group, State On, confirmed with What If</li><li>Leaver disabled, sessions revoked, P2 license removed</li><li>SAML SSO into the Toolkit as testuser; OIDC app with assignment required and an ID token on jwt.ms</li></ul>
+<a class="btn" href="https://github.com/salamraghe/entra-iam-lab">View repo and screenshots →</a>
+</article><article class="card" style="--c:#3B82F6">
+<div class="cat"><span class="pill">On-prem directory</span><span class="mo">Sep 2026</span></div>
+<h3>AD User Lifecycle</h3>
+<img src="assets/ad-user-lifecycle.png" alt="testuser Member Of shows Lab-Access-Group" loading="lazy">
+<h4>Problem</h4><p>Ticket-style joiner and leaver work on a real Windows Server 2022 domain controller.</p>
+<h4>Stack</h4><ul class="stack"><li>Windows Server 2022</li><li>Active Directory DS + DNS</li><li>ADUC</li><li>VirtualBox</li></ul>
+<h4>What's proven</h4><ul class="proof"><li>Promoted DC for lab.local and built OU LabUsers</li><li>Created testuser and Leaver User; added testuser to security group Lab-Access-Group</li><li>Proved access from the user side: Member Of → Lab-Access-Group</li><li>Disabled Leaver User (password reset done in the lab, no screenshot shipped)</li></ul>
+<a class="btn" href="https://github.com/salamraghe/ad-user-lifecycle">View repo and screenshots →</a>
+</article><article class="card" style="--c:#22C55E">
+<div class="cat"><span class="pill">SSO / MFA</span><span class="mo">Sep 2026</span></div>
+<h3>Okta SSO / MFA Lifecycle</h3>
+<img src="assets/okta-sso-mfa.png" alt="SSO success on the protected service provider page" loading="lazy">
+<h4>Problem</h4><p>Give one user access to a SAML app only through a group, require MFA, then take the access away.</p>
+<h4>Stack</h4><ul class="stack"><li>Okta Integrator Free</li><li>SAML 2.0</li><li>Okta Verify</li><li>IAMShowcase test SP</li></ul>
+<h4>What's proven</h4><ul class="proof"><li>Test user created and placed in group SSO-App-Users</li><li>Lab SAML App assigned to the group with Sign On policy Any two factors</li><li>SSO proof: Hello testuser@salamiam.com, Status Success, Issuer Okta, Audience IAMShowcase</li><li>Revoke: removed from group and the app tile is gone from the dashboard</li></ul>
+<a class="btn" href="https://github.com/salamraghe/okta-sso-mfa">View repo and screenshots →</a>
+</article><article class="card" style="--c:#F97316">
+<div class="cat"><span class="pill">Privileged access</span><span class="mo">Oct 2026</span></div>
+<h3>CyberArk PAM Self-Hosted 12.6</h3>
+<img src="assets/cyberark-pam-lab.png" alt="mgr1 confirms jdoe&#x27;s request" loading="lazy">
+<h4>Problem</h4><p>A Domain Admin account should only be used with a ticket, an approver, a rotated password and a recorded session.</p>
+<h4>Stack</h4><ul class="stack"><li>CyberArk Vault / CPM / PVWA / PSM 12.6</li><li>5 VMs on VMware Workstation</li><li>Active Directory</li><li>PVWA REST API</li></ul>
+<h4>What's proven</h4><ul class="proof"><li>svc-test (Domain Admins) onboarded into safe Lab-Admins on the WinDomain platform</li><li>Requester jdoe and approver mgr1 (separation of duties), dual control in Master Policy; Ticket 1001 requested and confirmed</li><li>CPM rotation failed once (winRc 2245), domain policy fixed, rotated to Compliant</li><li>PSM session to the DC recorded with Activities logged; jdoe removed from Lab-Admins; all 5 VMs snapshotted</li></ul>
+<a class="btn" href="https://github.com/salamraghe/cyberark-pam-lab">View repo and screenshots →</a>
+</article></section>
+<footer>Contact: <a href="https://github.com/salamraghe">github.com/salamraghe</a> · Labs built Sep–Oct 2026</footer>
+</main></body></html>
