@@ -69,6 +69,7 @@ footer{margin-top:40px;color:#aab3c2;font-size:.95rem;text-align:center}
 <h4>Problem</h4><p>A user needs MFA enforced, app access through SSO, and a clean offboard when they leave, all in a real Microsoft Entra tenant.</p>
 <h4>Stack</h4><ul class="stack"><li>Microsoft Entra ID (P2 trial)</li><li>Conditional Access</li><li>SAML (Entra SAML Toolkit)</li><li>OIDC (jwt.ms)</li></ul>
 <h4>What's proven</h4><ul class="proof"><li>Users, a security group (MFA-Test-Group) and P2 licensing set up</li><li>Conditional Access policy requiring MFA for the group, State On, confirmed with What If</li><li>Leaver disabled, sessions revoked, P2 license removed</li><li>SAML SSO into the Toolkit as testuser; OIDC app with assignment required and an ID token on jwt.ms</li></ul>
+<p>In Entra I required MFA for a test group with Conditional Access and gave that group SSO to a SAML app and an OIDC app. For a leaver, I disabled the account, revoked sessions, and removed the license and groups.</p>
 <a class="btn" href="https://github.com/salamraghe/entra-iam-lab">View repo and screenshots →</a>
 </article><article class="card" style="--c:#3B82F6">
 <div class="cat"><span class="pill">On-prem directory</span><span class="mo">Sep 2026</span></div>
