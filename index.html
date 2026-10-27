@@ -98,7 +98,7 @@ footer{margin-top:40px;color:#aab3c2;font-size:.95rem;text-align:center}
 <div class="cat"><span class="pill">Cloud identity</span><span class="mo">Oct 2026</span></div>
 <h3>Entra PIM: Just-in-Time Admin</h3>
 <img src="assets/entra-pim.png" alt="Role active with an end time one hour out" loading="lazy">
-<h4>Problem</h4><p>Nobody should hold an admin role all the time. They should ask for it, prove who they are, get approved, and lose it on a timer.</p>
+<h4>Problem</h4><p>Nobody should hold admin power all the time. I made them ask for it, pass MFA, get my OK, and lose it after an hour.</p>
 <h4>Stack</h4><ul class="stack"><li>Microsoft Entra ID P2</li><li>Privileged Identity Management</li><li>MFA</li></ul>
 <h4>What's proven</h4><ul class="proof"><li>Test User made eligible (not active) for User Administrator</li><li>Activation needs MFA, a reason and my approval, max 1 hour</li><li>Request approved, role active, then deactivated (hit the 5-minute minimum rule first)</li><li>Every step shows in the PIM audit log</li></ul>
 <a class="btn" href="https://github.com/salamraghe/entra-pim">View repo and screenshots →</a>
@@ -106,7 +106,7 @@ footer{margin-top:40px;color:#aab3c2;font-size:.95rem;text-align:center}
 <div class="cat"><span class="pill">Cloud identity</span><span class="mo">Oct 2026</span></div>
 <h3>ServiceNow Identity Tickets</h3>
 <img src="assets/servicenow-identity-tickets.png" alt="All three joiner, mover and leaver tickets resolved" loading="lazy">
-<h4>Problem</h4><p>Access changes arrive as tickets. Work a joiner, a mover and a leaver end to end, with a paper trail.</p>
+<h4>Problem</h4><p>I wanted to work identity tickets the way I would on the job: take the ticket, do the change, write down what I did, close it.</p>
 <h4>Stack</h4><ul class="stack"><li>ServiceNow developer instance</li><li>Microsoft Entra ID</li></ul>
 <h4>What's proven</h4><ul class="proof"><li>Three incidents: joiner, mover, leaver</li><li>Each set In Progress, work done in Entra ID, work notes logged</li><li>Joiner created and added to Finance-Users; mover added to Finance-Users; leaver account disabled</li><li>Each resolved with resolution notes</li></ul>
 <a class="btn" href="https://github.com/salamraghe/servicenow-identity-tickets">View repo and screenshots →</a>
@@ -114,7 +114,7 @@ footer{margin-top:40px;color:#aab3c2;font-size:.95rem;text-align:center}
 <div class="cat"><span class="pill">Cloud identity</span><span class="mo">Oct 2026</span></div>
 <h3>Entra SCIM Provisioning</h3>
 <img src="assets/entra-scim-provisioning.png" alt="Provision on demand succeeds and creates the user in the app" loading="lazy">
-<h4>Problem</h4><p>Assign a user to an app in Entra and have the account built there automatically, no hand-built accounts.</p>
+<h4>Problem</h4><p>I wanted Entra to build a user's account in an app by itself when I assign them, instead of making it by hand.</p>
 <h4>Stack</h4><ul class="stack"><li>Microsoft Entra ID</li><li>SCIM 2.0</li><li>scim.dev test server</li></ul>
 <h4>What's proven</h4><ul class="proof"><li>SCIM connection to scim.dev tested OK</li><li>First provision failed (emails required); added email, retried, user created in the app</li><li>Unassigned user skipped, so scope works</li><li>Leaver is partial: Entra shows IsActive False; app-side deactivation not shown (free test server resets data)</li></ul>
 <a class="btn" href="https://github.com/salamraghe/entra-scim-provisioning">View repo and screenshots →</a>
@@ -122,7 +122,7 @@ footer{margin-top:40px;color:#aab3c2;font-size:.95rem;text-align:center}
 <div class="cat"><span class="pill">Cloud identity</span><span class="mo">Oct 2026</span></div>
 <h3>Entra Access Review</h3>
 <img src="assets/entra-access-review.png" alt="Access review complete with 1 denied" loading="lazy">
-<h4>Problem</h4><p>Old access piles up. Check who still needs to be in a group and remove who doesn't.</p>
+<h4>Problem</h4><p>People keep access they don't need anymore. I checked a group and took out who shouldn't be there.</p>
 <h4>Stack</h4><ul class="stack"><li>Microsoft Entra ID P2</li><li>Access Reviews</li></ul>
 <h4>What's proven</h4><ul class="proof"><li>One-time review of MFA-Test-Group with auto-apply on</li><li>Test User inactive 30+ days, denied with a reason</li><li>Auto-apply removed them; group shows 0 members</li></ul>
 <a class="btn" href="https://github.com/salamraghe/entra-access-review">View repo and screenshots →</a>
@@ -130,7 +130,7 @@ footer{margin-top:40px;color:#aab3c2;font-size:.95rem;text-align:center}
 <div class="cat"><span class="pill">On-prem directory</span><span class="mo">Oct 2026</span></div>
 <h3>PowerShell Joiner / Mover / Leaver</h3>
 <img src="assets/powershell-jml.png" alt="jsmith&#x27;s groups after the mover script" loading="lazy">
-<h4>Problem</h4><p>Build, move and disable AD users from HR-style CSV files the same way every time, instead of clicking.</p>
+<h4>Problem</h4><p>HR gives me one CSV, I run my script, and every user is built the same way without clicking.</p>
 <h4>Stack</h4><ul class="stack"><li>PowerShell</li><li>Active Directory module</li><li>CSV</li></ul>
 <h4>What's proven</h4><ul class="proof"><li>Joiner script created two users in OU LabUsers with a starting group (temp password prompted, not stored)</li><li>First run failed, fixed, re-ran</li><li>Mover: old group removed first, new group added</li><li>Leaver disabled; checked every result in ADUC</li></ul>
 <a class="btn" href="https://github.com/salamraghe/powershell-jml">View repo and screenshots →</a>
@@ -138,7 +138,7 @@ footer{margin-top:40px;color:#aab3c2;font-size:.95rem;text-align:center}
 <div class="cat"><span class="pill">On-prem directory</span><span class="mo">Sep 2026</span></div>
 <h3>LLDAP Least-Privilege Groups</h3>
 <img src="assets/cyberky-lldap-least-privilege.png" alt="analyst1 is the member of the read-only group" loading="lazy">
-<h4>Problem</h4><p>A new analyst needs read access, not admin.</p>
+<h4>Problem</h4><p>A new analyst needs to read, not run the place. No admin unless admin gives it.</p>
 <h4>Stack</h4><ul class="stack"><li>LLDAP 0.6.2</li><li>CyberKy lab</li></ul>
 <h4>What's proven</h4><ul class="proof"><li>Created analyst1 and a read-only group</li><li>Kept the admin group admin-only</li><li>Signed in as analyst1 to confirm no admin rights</li></ul>
 <a class="btn" href="https://github.com/salamraghe/cyberky-lldap-least-privilege">View repo and screenshots →</a>
