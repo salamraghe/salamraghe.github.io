@@ -1,20 +1,20 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Abdisalam Abdirahman · IAM Support / IAM Engineer / PAM / Okta</title>
-<meta name="description" content="IAM home labs with proof: Entra ID, Active Directory, Okta SSO/MFA, CyberArk PAM.">
+<meta name="description" content="10 IAM home labs with proof: Entra ID (PIM, access reviews, SCIM), Active Directory, PowerShell, ServiceNow, Okta SSO/MFA, CyberArk PAM.">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Abdisalam Abdirahman · IAM Support Analyst · Okta · Entra ID · CyberArk PAM">
-<meta property="og:description" content="IAM home labs with proof: Entra ID, Active Directory, Okta SSO/MFA, CyberArk PAM.">
+<meta property="og:description" content="10 IAM home labs with proof: Entra ID (PIM, access reviews, SCIM), Active Directory, PowerShell, ServiceNow, Okta SSO/MFA, CyberArk PAM.">
 <meta property="og:url" content="https://salamraghe.github.io/">
 <meta property="og:image" content="https://salamraghe.github.io/og-portfolio.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="627">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Abdisalam Abdirahman · IAM Support Analyst · Okta · Entra ID · CyberArk PAM">
-<meta name="twitter:description" content="IAM home labs with proof: Entra ID, Active Directory, Okta SSO/MFA, CyberArk PAM.">
+<meta name="twitter:description" content="10 IAM home labs with proof: Entra ID (PIM, access reviews, SCIM), Active Directory, PowerShell, ServiceNow, Okta SSO/MFA, CyberArk PAM.">
 <meta name="twitter:image" content="https://salamraghe.github.io/og-portfolio.png">
 <style>
 *{box-sizing:border-box}html{font-size:17px}
-body{margin:0;background:radial-gradient(900px 600px at 18% 20%,rgba(37,99,235,.30),transparent 70%),radial-gradient(800px 700px at 85% 40%,rgba(147,51,234,.25),transparent 70%),radial-gradient(700px 500px at 50% 95%,rgba(13,148,136,.2),transparent 70%),linear-gradient(160deg,#070a14,#0d1224 45%,#0a0816);min-height:100vh;color:#e5e7eb;font-family:Sora,Inter,system-ui,sans-serif;line-height:1.6}
+body{margin:0;overflow-wrap:anywhere;background:radial-gradient(900px 600px at 18% 20%,rgba(37,99,235,.30),transparent 70%),radial-gradient(800px 700px at 85% 40%,rgba(147,51,234,.25),transparent 70%),radial-gradient(700px 500px at 50% 95%,rgba(13,148,136,.2),transparent 70%),linear-gradient(160deg,#070a14,#0d1224 45%,#0a0816);min-height:100vh;color:#e5e7eb;font-family:Sora,Inter,system-ui,sans-serif;line-height:1.6}
 a{color:#fbbf24}a:focus-visible,.btn:focus-visible{outline:3px solid #fbbf24;outline-offset:3px}
 .wrap{max-width:1120px;margin:0 auto;padding:40px 20px 56px}
 header{background:rgba(10,14,28,.85);border:1px solid rgba(255,255,255,.12);border-radius:16px;padding:32px}
@@ -36,7 +36,7 @@ h2{margin:40px 0 6px;font-size:1.5rem}.legend{display:flex;flex-wrap:wrap;gap:16
 .pill{color:#0b0f1e;background:var(--c);font-weight:700;font-size:.8rem;padding:2px 10px;border-radius:999px;letter-spacing:.5px;}
 .mo{color:#aab3c2;font-size:.9rem}
 h3{margin:.6rem 0 .6rem;font-size:1.25rem}
-.card img{width:100%;height:auto;border-radius:8px;border:1px solid rgba(255,255,255,.12);}
+.card img{width:100%;max-width:100%;height:auto;border-radius:8px;border:1px solid rgba(255,255,255,.12);}
 h4{margin:.9rem 0 .2rem;font-size:.85rem;letter-spacing:1px;text-transform:uppercase;color:var(--c);}
 .card p{margin:0}.card ul{margin:.2rem 0 0;padding-left:1.2rem}
 .stack{list-style:none;padding:0!important;display:flex;flex-wrap:wrap;gap:6px}
@@ -46,7 +46,7 @@ footer{margin-top:40px;color:#aab3c2;font-size:.95rem;text-align:center}
 @media(max-width:760px){.grid{grid-template-columns:1fr}.loop{grid-template-columns:repeat(2,1fr)}header{padding:22px}}
 </style></head><body><main class="wrap">
 <header>
-<p class="kick">🛣️ Road to June 2027 · Portfolio</p>
+<p class="kick">IAM Lab Portfolio</p>
 <h1>Abdisalam Abdirahman</h1>
 <p class="roles">IAM Support · IAM Engineer · PAM · Okta IAM</p>
 <div class="sum">
@@ -60,7 +60,7 @@ footer{margin-top:40px;color:#aab3c2;font-size:.95rem;text-align:center}
 </div>
 <ol class="loop" aria-label="Access lifecycle each lab follows"><li style="--c:#3B82F6"><b>Grant</b><span>right group, right app</span></li><li style="--c:#22C55E"><b>Verify</b><span>MFA / approval</span></li><li style="--c:#22D3EE"><b>Use</b><span>SSO or recorded session</span></li><li style="--c:#F97316"><b>Revoke</b><span>remove, disable, rotate</span></li></ol>
 </header>
-<h2>Labs</h2>
+<h2>Labs (10)</h2>
 <div class="legend"><span class="lg" style="--c:#22D3EE"><i></i>Cloud identity</span><span class="lg" style="--c:#3B82F6"><i></i>On-prem directory</span><span class="lg" style="--c:#22C55E"><i></i>SSO / MFA</span><span class="lg" style="--c:#F97316"><i></i>Privileged access</span></div>
 <section class="grid"><article class="card" style="--c:#22D3EE">
 <div class="cat"><span class="pill">Cloud identity</span><span class="mo">Sep 2026</span></div>
@@ -94,6 +94,54 @@ footer{margin-top:40px;color:#aab3c2;font-size:.95rem;text-align:center}
 <h4>Stack</h4><ul class="stack"><li>CyberArk Vault / CPM / PVWA / PSM 12.6</li><li>5 VMs on VMware Workstation</li><li>Active Directory</li><li>PVWA REST API</li></ul>
 <h4>What's proven</h4><ul class="proof"><li>svc-test (Domain Admins) onboarded into safe Lab-Admins on the WinDomain platform</li><li>Requester jdoe and approver mgr1 (separation of duties), dual control in Master Policy; Ticket 1001 requested and confirmed</li><li>CPM rotation failed once (winRc 2245), domain policy fixed, rotated to Compliant</li><li>PSM session to the DC recorded with Activities logged; jdoe removed from Lab-Admins; all 5 VMs snapshotted</li></ul>
 <a class="btn" href="https://github.com/salamraghe/cyberark-pam-lab">View repo and screenshots →</a>
+</article><article class="card" style="--c:#22D3EE">
+<div class="cat"><span class="pill">Cloud identity</span><span class="mo">Oct 2026</span></div>
+<h3>Entra PIM: Just-in-Time Admin</h3>
+<img src="assets/entra-pim.png" alt="Role active with an end time one hour out" loading="lazy">
+<h4>Problem</h4><p>Nobody should hold an admin role all the time. They should ask for it, prove who they are, get approved, and lose it on a timer.</p>
+<h4>Stack</h4><ul class="stack"><li>Microsoft Entra ID P2</li><li>Privileged Identity Management</li><li>MFA</li></ul>
+<h4>What's proven</h4><ul class="proof"><li>Test User made eligible (not active) for User Administrator</li><li>Activation needs MFA, a reason and my approval, max 1 hour</li><li>Request approved, role active, then deactivated (hit the 5-minute minimum rule first)</li><li>Every step shows in the PIM audit log</li></ul>
+<a class="btn" href="https://github.com/salamraghe/entra-pim">View repo and screenshots →</a>
+</article><article class="card" style="--c:#22D3EE">
+<div class="cat"><span class="pill">Cloud identity</span><span class="mo">Oct 2026</span></div>
+<h3>ServiceNow Identity Tickets</h3>
+<img src="assets/servicenow-identity-tickets.png" alt="All three joiner, mover and leaver tickets resolved" loading="lazy">
+<h4>Problem</h4><p>Access changes arrive as tickets. Work a joiner, a mover and a leaver end to end, with a paper trail.</p>
+<h4>Stack</h4><ul class="stack"><li>ServiceNow developer instance</li><li>Microsoft Entra ID</li></ul>
+<h4>What's proven</h4><ul class="proof"><li>Three incidents: joiner, mover, leaver</li><li>Each set In Progress, work done in Entra ID, work notes logged</li><li>Joiner created and added to Finance-Users; mover added to Finance-Users; leaver account disabled</li><li>Each resolved with resolution notes</li></ul>
+<a class="btn" href="https://github.com/salamraghe/servicenow-identity-tickets">View repo and screenshots →</a>
+</article><article class="card" style="--c:#22D3EE">
+<div class="cat"><span class="pill">Cloud identity</span><span class="mo">Oct 2026</span></div>
+<h3>Entra SCIM Provisioning</h3>
+<img src="assets/entra-scim-provisioning.png" alt="Provision on demand succeeds and creates the user in the app" loading="lazy">
+<h4>Problem</h4><p>Assign a user to an app in Entra and have the account built there automatically, no hand-built accounts.</p>
+<h4>Stack</h4><ul class="stack"><li>Microsoft Entra ID</li><li>SCIM 2.0</li><li>scim.dev test server</li></ul>
+<h4>What's proven</h4><ul class="proof"><li>SCIM connection to scim.dev tested OK</li><li>First provision failed (emails required); added email, retried, user created in the app</li><li>Unassigned user skipped, so scope works</li><li>Leaver is partial: Entra shows IsActive False; app-side deactivation not shown (free test server resets data)</li></ul>
+<a class="btn" href="https://github.com/salamraghe/entra-scim-provisioning">View repo and screenshots →</a>
+</article><article class="card" style="--c:#22D3EE">
+<div class="cat"><span class="pill">Cloud identity</span><span class="mo">Oct 2026</span></div>
+<h3>Entra Access Review</h3>
+<img src="assets/entra-access-review.png" alt="Access review complete with 1 denied" loading="lazy">
+<h4>Problem</h4><p>Old access piles up. Check who still needs to be in a group and remove who doesn't.</p>
+<h4>Stack</h4><ul class="stack"><li>Microsoft Entra ID P2</li><li>Access Reviews</li></ul>
+<h4>What's proven</h4><ul class="proof"><li>One-time review of MFA-Test-Group with auto-apply on</li><li>Test User inactive 30+ days, denied with a reason</li><li>Auto-apply removed them; group shows 0 members</li></ul>
+<a class="btn" href="https://github.com/salamraghe/entra-access-review">View repo and screenshots →</a>
+</article><article class="card" style="--c:#3B82F6">
+<div class="cat"><span class="pill">On-prem directory</span><span class="mo">Oct 2026</span></div>
+<h3>PowerShell Joiner / Mover / Leaver</h3>
+<img src="assets/powershell-jml.png" alt="jsmith&#x27;s groups after the mover script" loading="lazy">
+<h4>Problem</h4><p>Build, move and disable AD users from HR-style CSV files the same way every time, instead of clicking.</p>
+<h4>Stack</h4><ul class="stack"><li>PowerShell</li><li>Active Directory module</li><li>CSV</li></ul>
+<h4>What's proven</h4><ul class="proof"><li>Joiner script created two users in OU LabUsers with a starting group (temp password prompted, not stored)</li><li>First run failed, fixed, re-ran</li><li>Mover: old group removed first, new group added</li><li>Leaver disabled; checked every result in ADUC</li></ul>
+<a class="btn" href="https://github.com/salamraghe/powershell-jml">View repo and screenshots →</a>
+</article><article class="card" style="--c:#3B82F6">
+<div class="cat"><span class="pill">On-prem directory</span><span class="mo">Sep 2026</span></div>
+<h3>LLDAP Least-Privilege Groups</h3>
+<img src="assets/cyberky-lldap-least-privilege.png" alt="analyst1 is the member of the read-only group" loading="lazy">
+<h4>Problem</h4><p>A new analyst needs read access, not admin.</p>
+<h4>Stack</h4><ul class="stack"><li>LLDAP 0.6.2</li><li>CyberKy lab</li></ul>
+<h4>What's proven</h4><ul class="proof"><li>Created analyst1 and a read-only group</li><li>Kept the admin group admin-only</li><li>Signed in as analyst1 to confirm no admin rights</li></ul>
+<a class="btn" href="https://github.com/salamraghe/cyberky-lldap-least-privilege">View repo and screenshots →</a>
 </article></section>
 <footer>Contact: <a href="https://github.com/salamraghe">github.com/salamraghe</a> · Labs built Sep–Oct 2026</footer>
 </main></body></html>
